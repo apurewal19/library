@@ -92,4 +92,13 @@ input[type = submit] {
     border: none;
 }
 
+.toggle-read-button {
+    color: white;
+    background-color: blue;
+    padding: 12px;
+    margin-top: 60px;
+    border-radius: 10%;
+    border: none;
+}
+
 
