@@ -13,7 +13,7 @@ newBookForm.addEventListener('submit', (event) => {
     addBookToLibrary();
 })
 
-
+// book object constructor
 function Book(title, author, pages, read) {
     this.title = title;
     this.author = author;
@@ -21,6 +21,7 @@ function Book(title, author, pages, read) {
     this.read = read;
 }
 
+// on and off switch for toggle read button
 Book.prototype.toggleRead = function() {
     this.read = !this.read;
 }
@@ -30,6 +31,7 @@ function toggleRead(index) {
     render();
 }
 
+//renders book cards from users form input
 function render() {
     libraryEl.innerHTML = "";
     for (let i = 0; i < myLibrary.length; i++) {
@@ -52,11 +54,13 @@ function render() {
 
 }
 
+// removes book cards
 function removeBook(index) {
     myLibrary.splice(index, 1);
     render();
 }
 
+// adds book to the library
 function addBookToLibrary() {
     let title = document.querySelector("#title").value;
     let author = document.getElementById("author").value;
