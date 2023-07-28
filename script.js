@@ -35,10 +35,16 @@ function render() {
             <div class = "card-body">
                 <p>${book.pages} pages </p>
                 <p class ="read-status"> ${book.read ? "Read" : "Not Read Yet"}</p>
+                <button class ="remove-button" onclick="removeBook(${i})">Remove</button>
             </div>`;
         libraryEl.appendChild(bookEl);
     }
 
+}
+
+function removeBook(index) {
+    myLibrary.splice(index, 1);
+    render();
 }
 
 function addBookToLibrary() {
