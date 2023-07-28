@@ -31,7 +31,7 @@ function toggleRead(index) {
     render();
 }
 
-//renders book cards from users form input
+// renders book cards from users form input
 function render() {
     libraryEl.innerHTML = "";
     for (let i = 0; i < myLibrary.length; i++) {
