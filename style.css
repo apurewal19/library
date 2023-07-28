@@ -54,3 +54,33 @@ input[type = submit] {
     border: none;
     border-radius: 4px;
 }
+
+#library {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 20px;
+    gap: 47px;
+}
+
+.book-card {
+    display: flex;
+    flex-direction: column;
+    border: solid black;
+    justify-content: center;
+    padding-top: 140px;
+    padding-right: 70px;
+    padding-left: 70px;
+    padding-bottom: 140px;
+}
+
+.card-header .title {
+    font-size: 30px;
+}
+
+.card-header .author {
+    font-size: 20px;
+}
+
+
