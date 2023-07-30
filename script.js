@@ -44,10 +44,12 @@ function render() {
                 <h5 class = "author">${book.author}</h5>
             </div>
             <div class = "card-body">
-                <p>${book.pages} pages </p>
-                <p class ="read-status"> ${book.read ? "Read" : "Not Read Yet"}</p>
-                <button class ="remove-button" onclick="removeBook(${i})">Remove</button>
-                <button class ="toggle-read-button" onclick="toggleRead(${i})">Toggle Read</button>
+                <p class = "pages-read">${book.pages} pages </p>
+                <p class = "read-status"> ${book.read ? "Read" : "Not Read Yet"}</p>
+                <div class = "card-buttons">
+                    <button class = "remove-button" onclick="removeBook(${i})">Remove</button>
+                    <button class = "toggle-read-button" onclick="toggleRead(${i})">Toggle Read</button>
+                </div>
             </div>`;
         libraryEl.appendChild(bookEl);
     }
