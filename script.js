@@ -53,7 +53,6 @@ function render() {
             </div>`;
         libraryEl.appendChild(bookEl);
     }
-
 }
 
 // removes book cards
